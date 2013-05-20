@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright 2013 Redwood Systems Inc.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+	<RelativeLayout
+	     android:layout_width="fill_parent"
+	     android:layout_height="50dp"
+	     android:background="#ff00539B"
+	     android:gravity="center">
+	     
+	    <ImageView
+	      android:id="@+id/logo_view"
+	      android:src="@drawable/redwoodlogo"
+	      android:contentDescription="@string/logo_text"
+	      android:layout_width="wrap_content"
+	      android:layout_height="match_parent"
+	      android:scaleType="center"/>
+	        
+	 </RelativeLayout>
+	 
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" 
+       android:layout_marginTop="65dp"
+       android:orientation="vertical"
+       android:paddingLeft="20dp"
+       android:paddingRight="20dp"
+       android:paddingTop="16dp"
+       android:paddingBottom="16dp">
+	
+	   <TextView
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:gravity="left"
+	     android:textAppearance="?android:attr/textAppearanceSmall"
+	     android:text="@string/settings_hdr" />
+	   
+	   <LinearLayout
+	       android:layout_width="match_parent"
+	       android:layout_height="wrap_content" 
+	       android:paddingTop="8dp"
+	       android:paddingBottom="8dp">
+	   
+	       <TextView
+	        android:layout_width="120dp"
+	        android:layout_height="50dp"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textStyle="bold"
+	        android:text="@string/cluster_name" />
+	       
+	      <EditText
+	       android:id="@+id/clusterName"
+	       android:layout_width="wrap_content"
+	       android:layout_height="50dp"
+	       android:ems="15"
+	       android:hint="cluster host"
+	       android:inputType="textUri"
+	       android:paddingLeft="10dp"
+	       android:singleLine="true" 
+	       android:imeOptions="actionNext"
+	       android:textAppearance="?android:attr/textAppearanceSmall"
+	       android:text="@string/default_cluster_name">
+		    <requestFocus />
+	   	</EditText>
+	   </LinearLayout>
+	   
+   	   <LinearLayout
+	       android:layout_width="match_parent"
+	       android:layout_height="wrap_content" 
+	       android:paddingTop="8dp"
+	       android:paddingBottom="8dp">
+
+   	        <TextView
+	       	android:layout_width="120dp"
+	        android:layout_height="50dp"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textStyle="bold"
+	        android:text="@string/password" />
+   	        
+   	       <EditText
+	       android:id="@+id/password"
+	       android:layout_width="wrap_content"
+	       android:layout_height="50dp"
+	       android:ems="15"
+	       android:hint="password"
+	       android:inputType="textPassword"
+	       android:paddingLeft="10dp"
+	       android:singleLine="true" 
+	       android:imeOptions="actionDone"
+	       android:text="@string/default_password">
+	   		</EditText>
+   	       	      
+   	   </LinearLayout>
+       	    
+    </LinearLayout>
+
+</LinearLayout>
+ 
+   
