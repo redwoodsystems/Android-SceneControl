@@ -1,4 +1,1 @@
-Apache Redwood Systems Scene Controller
-Copyright 2013 The Apache Software Foundation
-This product includes software developed at
-The Apache Software Foundation (http://www.apache.org/).
+Redwood Systems Scene Controller
